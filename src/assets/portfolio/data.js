@@ -1,0 +1,46 @@
+export const trabajos =[
+    {
+        "id":1,
+        "nombre":"drinkIdeas",
+        "imagen":"./img/2.svg",
+        "clase":"job1",
+        "cat":"web"
+    },
+    {
+        "id":2,
+        "nombre":"GcIntegral",
+        "imagen":"./img/4.svg",
+        "clase":"job2",
+        "cat":"web"
+    },
+    {
+        "id":3,
+        "nombre":"pitufines",
+        "imagen":"./img/6.svg",
+        "clase":"job3",
+        "cat":"web"
+    }
+]
+export const areas =[
+    {
+        "id":1,
+        "nombre":"drinkIdeas",
+        "imagen":"./img/2.svg",
+        "clase":"job1",
+        "cat":"web"
+    },
+    {
+        "id":2,
+        "nombre":"GcIntegral",
+        "imagen":"./img/4.svg",
+        "clase":"job2",
+        "cat":"web"
+    },
+    {
+        "id":3,
+        "nombre":"pitufines",
+        "imagen":"./img/6.svg",
+        "clase":"job3",
+        "cat":"web"
+    }
+]

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.background{
+    background-image:Url('/img/background.webp')
+}
+
+
+
+.group:hover  {
+
+    background-color :  #FF589ECC;
+
+
+}
+
+.group:hover picture   {
+
+    background-color :  #FF589E;
+
+
+}
+.group:hover h3   {
+
+    color : white;
+
+
+}
+.group:hover p  {
+
+    color : white;
+
+
+}
+.group:hover i  {
+
+    color : white;
+
+
+}
+
+
+.group:hover button  {
+    background : white;
+    color :  #FF589E;
+
+
+}
+
+.group:hover .fa-arrow-right{
+
+    color :  #FF589E;
+    
+
+}
+
+
+
+.job1{
+
+    background-image:Url('/img/1.svg')
+    
+}
+.job2{
+
+    background-image:Url('/img/3.svg')
+}
+.job3{
+
+    background-image:Url('/img/5.svg')
+}
+
+
+
+.skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    z-index: 0;
+    transform: skewY(6deg);
+    transform-origin: top right;
+  }
+
+
+  .letter{
+  
+
+    background-image:Url('/img/bg-letter.jpg');
+    background-position:center center;
+    background-size : cover
+  
+  }
