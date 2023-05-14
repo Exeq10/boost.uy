@@ -43,7 +43,7 @@
 }
 
 
-.group:hover button  {
+.group:hover .button  {
     background : white;
     color :  #FF589E;
 
@@ -53,6 +53,7 @@
 .group:hover .fa-arrow-right{
 
     color :  #FF589E;
+    
     
 
 }

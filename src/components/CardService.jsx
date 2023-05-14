@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-function CardService({nombre,long,short,picture}) {
+function CardService({nombre,long,short,picture,id}) {
+
+ 
 
 
   
@@ -15,7 +18,12 @@ function CardService({nombre,long,short,picture}) {
      
              <p> {short} </p>
      
-             <button className="  shadow-2xl hover:animate-pulse mt-3 mb-3 rounded-xl bg-pinkPrincipal px-7 text-lg text-white  gap-3 ">Ver Más <i className="fa-solid fa-arrow-right  ml-1    "></i></button></div>
+          
+
+             <Link to={`/services/${id}`} className=" button shadow-2xl hover:animate-pulse mt-3 mb-3 rounded-xl bg-pinkPrincipal px-7 text-lg text-white  gap-3 ">
+              Ver Más <i className="fa-solid fa-arrow-right  ml-1    "></i>
+             </Link>
+             </div>
   )
 }
 

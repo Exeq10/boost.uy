@@ -35,7 +35,7 @@ function FormContact() {
         >
           {/* input name====================================== */}
           <div className="flex flex-col justify-start items-start w-3/6 gap-2">
-            <label className="text-white font-bold text-lg">Nombre</label>
+            <label className="text-white font-bold text-lg">  <i className="fa-solid fa-user"></i> Nombre</label>
 
             <input
               id="text"
@@ -58,7 +58,7 @@ function FormContact() {
           {/* input email====================================== */}
           <div className="flex flex-col justify-start items-start w-3/6 gap-2 ">
             {" "}
-            <label className="text-white font-bold text-lg">Email</label>
+            <label className="text-white font-bold text-lg"> <i className="fa-solid fa-envelope"></i> Email</label>
            
             <input
         id="email"
@@ -82,7 +82,7 @@ function FormContact() {
           {/* text area ============================================================================ */}
           <div className="flex flex-col justify-start items-start  w-4/6 gap-2">
             {" "}
-            <label className="text-white font-bold text-lg">Mensaje</label>
+            <label className="text-white font-bold text-lg"> <i className="fa-solid fa-pen-to-square"></i> Mensaje</label>
             <div className="w-full flex gap-5 items-end">
               <textarea
                 id="message"

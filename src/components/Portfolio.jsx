@@ -24,7 +24,7 @@ useEffect(() => {
 const rendering = () =>{
 
 
-  return filtro.map((trabajo)=> <Proyecto trabajo={trabajo}/> )
+  return filtro.map((trabajo,key)=> <Proyecto trabajo={trabajo} key={key}/> )
 }
 
 
@@ -38,7 +38,7 @@ const rendering = () =>{
 
 <div className='flex w-4/6 m-auto justify-between mt-4 mb-4'>  
 <button className='text-pinkPrincipal rounded-xl hover:shadow-lg border border-pinkPrincipal py-1 px-7 hover
-hover:scale-105 hover:bg-pinkPrincipal hover:text-white duration-300' onClick={()=> setCategoria('mark')}>Marketing</button>
+hover:scale-105 hover:bg-pinkPrincipal hover:text-white duration-300' onClick={()=> setCategoria('ases')}>Asesorias</button>
     <button className='text-pinkPrincipal rounded-xl hover:shadow-lg border border-pinkPrincipal py-1 px-7 hover
     hover:scale-105 hover:bg-pinkPrincipal hover:text-white duration-300' onClick={()=> setCategoria('web')}>Webs</button>
     <button className='text-pinkPrincipal rounded-xl hover:shadow-lg border border-pinkPrincipal py-1 px-7 hover
