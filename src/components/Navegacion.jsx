@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Navegacion() {
+function Navegacion() { 
 
+  
 
 
   return (
-    <div className='w-full flex   md:flex-row  justify-between items-center   bg-pinkPrincipal  px-3 shadow-xl sm:flex-col ' >
+    <div className= {`w-full flex z-10  md:flex-row  justify-between items-center   bg-pinkPrincipal  px-3 shadow-xl sm:flex-col`} >
 
 
         <picture className='w-24 h-16 flex justify-center items-center '>
@@ -23,10 +24,10 @@ function Navegacion() {
                    <a href="#nosotros"> Sobre Nosotros</a>
                 </li>
                 <li className=' hover:text-black'>
-                   <a href="servicios"> Servicios</a>
+                   <a href="#servicios"> Servicios</a>
                 </li>
                 <li className=' hover:text-black'>
-                 <a href="contacto">  Contacto </a>
+                 <a href="#contacto">  Contacto </a>
                 </li>
             </ul>
         </nav>

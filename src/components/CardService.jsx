@@ -10,7 +10,7 @@ function CardService({nombre,long,short,picture,id}) {
 
 
   return (
-    <div className="group   shadow-lg  w-auto max-h-80  flex flex-col border  px-4   items-start wow animate__animated animate__fadeIn duration-1000 ">
+    <div className="group   shadow-lg  sm:w-96 md:max-w-custom max-h-140  flex flex-col border  px-4   items-start  mt-4 ">
             <i className={ `fa-solid ${picture}  text-5xl text-pinkPrincipal mt-4 mb-4 ml-4`} ></i>
                
      

@@ -6,11 +6,22 @@ export default {
       screens: {
 
        
-          'phone': '300px',
+          'phone': '278px',
          
     
+  },
+
+  maxWidth: {
+    'custom': '24rem',
   }
 ,
+
+
+
+
+
+
+
 
       
       colors: {
@@ -32,10 +43,16 @@ export default {
 
       boxShadow: {
         'custom': ' 4px 6px 6px 2px #00000040',
-        'reversecustom': '  12px -4px 6px 2px #00000040'
+        'reversecustom': '  12px -4px 6px 2px #00000040',
+
+        'glass': ' 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )'
        
         ,
       }
+
+      
+
+
 
       
     },

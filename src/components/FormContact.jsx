@@ -11,7 +11,7 @@ function FormContact() {
     if (state.succeeded) {
    
        
-        return  <div className='w-2/3  text-center mt-9 text-white text-2xl flex animate-pulse
+        return  <div className='md:w-2/3  w-full text-center mt-9 text-white text-2xl flex animate-pulse
          flex-col  items-center justify-center gap-3'>
             <i className="fa-regular fa-circle-check text-5xl"></i>
             <p >Mensaje Enviado </p>
@@ -28,7 +28,7 @@ function FormContact() {
    <>
 
     {/* 1° div contact ============================================================================ */}
-    <div className="bg-pinkPrincipal    w-2/3   py-9 px-9">
+    <div className="bg-pinkPrincipal  flex   md:w-2/3   w-full py-9 px-9">
         <form id="formulario"
           className="flex flex-col gap-5 w-full     "
           onSubmit={handleSubmit}
@@ -83,7 +83,7 @@ function FormContact() {
           <div className="flex flex-col justify-start items-start  w-4/6 gap-2">
             {" "}
             <label className="text-white font-bold text-lg"> <i className="fa-solid fa-pen-to-square"></i> Mensaje</label>
-            <div className="w-full flex gap-5 items-end">
+            <div className="w-full flex gap-5 items-end flex-wrap">
               <textarea
                 id="message"
                 name="message"

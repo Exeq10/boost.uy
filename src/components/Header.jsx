@@ -21,7 +21,7 @@ function Header() {
 <h2 className='animate__animated  animate__fadeInLeftBig  font-serif  bg-pinkOpacity md:w-auto phone:h-3/5  py-2 px-20 mt-5  rounded-lg text-white  md:text-2xl phone:text-sm '   >Marketing - Redes - Desarrollo web </h2>
 
 
-        <button className= '  animate__animated  animate__heartBeat  bg-white   text-pinkPrincipal shadow-custom px-5 py-1  font-bold font-serif md:text-3xl  md:mt-52  md:mr-40  md:-rotate-18 phone:mt-20  rounded-lg  transition-all  duration-700   hover:text-black  hover:shadow-reversecustom hover:animate-bounce '  > Consultas</button>
+        <a  href="https://wa.link/n8zbo6" target='_blank' className= '  animate__animated  animate__heartBeat  bg-white   text-pinkPrincipal shadow-custom px-5 py-1  font-bold font-serif md:text-3xl  md:mt-52  md:mr-40  md:-rotate-18 phone:mt-20  rounded-lg  transition-all  duration-700   hover:text-black  hover:shadow-reversecustom hover:animate-bounce '  > Consultas</a>
 
     </div>
 

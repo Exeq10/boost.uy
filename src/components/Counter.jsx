@@ -54,27 +54,27 @@ function Counter() {
 
 
   return (
-    <section className="w-3/4 flex m-auto justify-between  font-serif font-bold mt-9">
+    <section className="md:w-3/4 flex m-auto justify-between px-5 font-serif font-bold mt-9">
       <div className="flex flex-col gap-3 items-center">
      
-        <p className="text-4xl">{clientes} +</p>
+        <p className="md:text-4xl text-2xl">{clientes} +</p>
 
-        <p>Clientes Satisfechos</p>
+        <p className="text-xs text-center md:text-xl">Clientes Satisfechos</p>
       </div>
       <div className="flex flex-col gap-3 items-center">
     
-        <p className="text-4xl">{campañas} +</p>
-        <p>Campañas realizadas </p>
+        <p className="md:text-4xl text-2xl">{campañas} +</p>
+        <p className="text-xs text-center md:text-xl">Campañas realizadas </p>
       </div>
       <div className="flex flex-col gap-3 items-center">
 
-        <p className="text-4xl">{cuentas} +</p>
-        <p>Cuentas alcanzadas</p>{" "}
+        <p className="md:text-4xl text-2xl">{cuentas} +</p>
+        <p className="text-xs text-center md:text-xl">Cuentas alcanzadas</p>{" "}
       </div>
       <div className="flex flex-col gap-3 items-center">
  
-        <p className="text-4xl">{publicidad} +</p>
-        <p>Invertidos en publicidad</p>{" "}
+        <p className="md:text-4xl text-2xl">{publicidad} +</p>
+        <p className="text-xs text-center md:text-xl">Invertidos en publicidad</p>{" "}
       </div>
     </section>
   );

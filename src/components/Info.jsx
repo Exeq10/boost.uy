@@ -7,7 +7,7 @@ function Info() {
     <section className="flex container flex-wrap justify-center align-middle m-auto ">
       <a id="nosotros"></a>
       {/* primer container ========================================================================= */}
-      <div className="w-full  text-center py-24 px-14  ">
+      <div className="w-full  text-center py-24  md:px-14  phone:px-4 ">
         <div className="text-center md:w-4/6 phone:w-full  m-auto wow animate__animated animate__bounceInDown">
           <h4 className="text-2xl font-bold mb-2 font-serif">
             Quienes{" "}
@@ -31,7 +31,7 @@ function Info() {
           </p>
         </div>
 
-        <div className="  justify-between gap-10 phone:flex">
+        <div className="   lg:flex justify-between gap-10   ">
           <div className="text-center   mt-32 wow animate__animated animate__bounceInDown">
             <h4 className="text-2xl font-bold mb-2 font-serif">
               Áreas{" "}
@@ -75,9 +75,10 @@ function Info() {
       {/*  segundo container================================================================ */}
 
       <div
-        className="w-full px-24 py-14   flex  gap-5 justify-center  card 
+        className="w-full md:px-24   md:py-14  flex  gap-5 justify-center items-center flex-wrap card 
        "
       >
+        <a id="servicios"></a>
         {Servicios.map((servicio, key) => (
           <CardService
             id={servicio.id}

@@ -6,9 +6,9 @@ function Team() {
       </h3>
 
       <div className="flex flex-wrap  gap-14 justify-between items-center mt-16 w-full ">
-        {/* /* /* /* /* /* /* /* /* /*  {/* Exequiel ============================================================================================ */}
-        <div className="flex  w-2/5 gap-5 ">
-          <picture className="w-4/5">
+        {/* /* /* /* /* /* /* /* /* /*  {/* Sthefani ============================================================================================ */}
+        <div className="md:flex  md:w-2/5 gap-5 ">
+          <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/sthefani.png" alt="member" />
           </picture>
 
@@ -29,8 +29,8 @@ function Team() {
         {/* fin Exequiel========================================================================================0000000 */}
 
         {/* Cande  */}
-        <div className="flex  w-2/5 gap-5 ">
-          <picture className="w-4/5">
+        <div className="md:flex   md:w-2/5 gap-5 ">
+          <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/cande.svg" alt="member" />
           </picture>
 
@@ -52,8 +52,8 @@ function Team() {
         {/* fin Cande========================================================================================0000000 */}
 
         {/* Luciana  */}
-        <div className="flex  w-2/5 gap-5 ">
-          <picture className="w-4/5">
+        <div className="md:flex   md:w-2/5 gap-5 ">
+          <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/lu.svg" alt="member" />
           </picture>
 
@@ -73,8 +73,8 @@ function Team() {
         {/* fin Luciana ========================================================================================0000000 */}
 
         {/* Exequiel  */}
-        <div className="flex  w-2/5 gap-5 ">
-          <picture className="w-4/5">
+        <div className="md:flex  md:w-2/5  gap-5 ">
+          <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/exe.svg" alt="member" />
           </picture>
 

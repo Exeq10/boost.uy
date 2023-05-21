@@ -13,7 +13,7 @@ import ChatWpp from "./components/ChatWpp";
 import Service from "./components/Service";
 
 function App() {
-  const [position, setPosition] = useState("");
+  const [position, setPosition] = useState(755);
 
   window.addEventListener("scroll", () => {
     const point = document.querySelector(".point");
