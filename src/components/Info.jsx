@@ -1,22 +1,56 @@
-import React from "react";
+import {useRef, useState} from "react";
 import Servicios from "../assets/Services/Servicios";
 import CardService from "./CardService";
+import { animate, animations, motion } from "framer-motion"
 
 function Info() {
+
+
+
+  const scrollRef = useRef(null)
   return (
-    <section className="flex container flex-wrap justify-center align-middle m-auto ">
+   
+    <section ref={scrollRef}   className="flex container flex-wrap justify-center align-middle m-auto ">
       <a id="nosotros"></a>
+     
       {/* primer container ========================================================================= */}
-      <div className="w-full  text-center py-24  md:px-14  phone:px-4 ">
-        <div className="text-center md:w-4/6 phone:w-full  m-auto wow animate__animated animate__bounceInDown">
-          <h4 className="text-2xl font-bold mb-2 font-serif">
+      < div
+      
+  
+   
+     
+      className="w-full  text-center py-24  md:px-14  phone:px-4 ">
+        <motion.div 
+      
+      
+          initial={{ opacity: 0,
+          y: 200 }}
+      whileInView={{ opacity: 1,
+      translateY:-200 }
+    }
+    
+     transition={{
+      duration:0.8
+      
+     }}
+        
+    
+     
+      
+     
+      
+        className="text-center md:w-4/6 phone:w-full  m-auto ">
+
+ 
+          <h4  className="text-2xl font-bold mb-2 font-serif"> 
             Quienes{" "}
             <span className="text-pinkPrincipal  ">
               Somos <i className="fa-solid fa-users-between-lines"></i>
             </span>{" "}
           </h4>
+        
 
-          <p className="text-lg">
+          <p className="text-lg text-gray-500">
             Somos una{" "}
             <span className="font-semibold">
               agencia de <span className="font-bold">marketing</span>
@@ -29,10 +63,29 @@ function Info() {
             <span className="font-bold">marketing</span> que se adapten a las
             necesidades únicas de cada cliente.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="   lg:flex justify-between gap-10   ">
-          <div className="text-center   mt-32 wow animate__animated animate__bounceInDown">
+        <div
+         className="   lg:flex justify-between gap-10   ">
+          <motion.div
+         
+            initial={{ opacity: 0,
+            x: -200 }}
+        whileInView={{ opacity: 1,
+        translateX:200 }
+      }
+      
+       transition={{
+        duration:0.8
+        
+       }}
+          
+      
+      
+       
+        
+       
+          className="text-center   mt-32 ">
             <h4 className="text-2xl font-bold mb-2 font-serif">
               Áreas{" "}
               <span className="text-pinkPrincipal  ">
@@ -40,15 +93,25 @@ function Info() {
               </span>{" "}
             </h4>
 
-            <p className="text-lg">
+            <p className="text-lg  text-gray-500">
               Nos especializamos en dos áreas clave: la gestión de redes
               sociales y el desarrollo web. Nuestro equipo de expertos en redes
               sociales puede ayudarle a construir una presencia sólida en las
               redes sociales, aumentar su base de seguidores y mejorar su
               compromiso con su audiencia..
             </p>
-          </div>
-          <div className="text-center   mt-32 wow animate__animated animate__bounceInDown">
+          </motion.div>
+          <motion.div 
+                initial={{ opacity: 0,
+                  x: 200 }}
+              whileInView={{ opacity: 1,
+              translateX:-200 }
+            }
+            
+             transition={{
+              duration:0.8
+              
+             }}className="text-center   mt-32 ">
             <h4 className="text-2xl font-bold mb-2 font-serif ">
               Buenas{" "}
               <span className="text-pinkPrincipal  ">
@@ -56,7 +119,7 @@ function Info() {
               </span>{" "}
             </h4>
 
-            <p className="text-lg">
+            <p className="text-lg  text-gray-500">
               En{" "}
               <span className="text-pinkPrincipal  text-bold ">
                 <span className="text-pinkPrincipal  font-bold ">Boost </span>{" "}
@@ -69,7 +132,7 @@ function Info() {
               cliente y trabajar en colaboración para ayudarles a alcanzar sus
               objetivos de <span className="font-bold"> marketing</span>.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/*  segundo container================================================================ */}
@@ -79,8 +142,12 @@ function Info() {
        "
       >
         <a id="servicios"></a>
-        {Servicios.map((servicio, key) => (
+        {
+       
+        Servicios.map((servicio, key) => (
+        
           <CardService
+            
             id={servicio.id}
             key={key}
             nombre={servicio.nombre}
@@ -91,6 +158,7 @@ function Info() {
         ))}
       </div>
     </section>
+    
   );
 }
 

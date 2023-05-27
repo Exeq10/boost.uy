@@ -4,17 +4,19 @@
 
 
 
+
+
 html{
 scroll-behavior:
     smooth
 }
 
-.background{
-    background-image:Url('/img/background.webp')
-}
 
 
 
+ .background {
+    background-image:URL('/img/background.webp')
+ }
 .group:hover  {
 
     background-color :  #FF589ECC;
@@ -99,7 +101,7 @@ scroll-behavior:
   .letter{
   
 
-    background-image:Url('/img/bg-letter.jpg');
+    background-image:Url('/img/bg-letter.webp');
     background-position:center center;
     background-size : cover
   

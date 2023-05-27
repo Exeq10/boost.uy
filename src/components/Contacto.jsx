@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Swal from "sweetalert2";
+import  { useState, useEffect } from "react";
+import { animate, animations, delay, motion } from "framer-motion"
+
 
 import FormContact from "./FormContact";
 
@@ -10,19 +11,85 @@ function Contacto() {
     <section className=" bg-pinkPrincipal mt-52 flex flex-wrap  ">
 
       <a id="contacto"></a>
-      <FormContact />
 
       {/* 2°div  contact ============================================================================ */}
-      <div className=" md:w-1/3 w-full bg-pinkPrincipal flex flex-col gap-28 justify-start items-end pr-4 py-6 ">
-        {/* Logo Contact  */}
-        <picture className="md:w-60  w-40 flex justify-center items-end mt-6">
-          <img src="./logoboost.png" alt="logo" className="rounded-2xl" />
-        </picture>
+      <div className=" md:w-2/4 w-full bg-white flex flex-col gap-28 justify-start items-center pr-4 py-6 ">
+       
+       <h5 className="border-b-2 border-pinkPrincipal text-lg font-bold font-serif">Nuestras oficinas </h5>
 
-      <div>
+
+<div className="flex justify-between gap-11">
+
+       <div><img className="w-28 drop-shadow-md" src="/uruguay.webp" alt="" /></div>
+       <div className="flex flex-col gap-4 ">
+
+       
+
+        <h5 className="text-1xl text-pinkPrincipal font-bold text-lg border-b-2 mb-2 font-serif">Uruguay</h5>
+
+        <motion.p
         
+        initial={{ opacity: 0,
+              x:300
+            }}
+            whileInView={{ opacity: 1,
+              translateX : -300
+            }
+          }
+          
+           transition={{
+            duration:  0.5,
+            type:'spring'
+            
+            
+           }}
+           viewport={{ once: true }}
+        
+        >José Pedro Rámirez esq Juan Manuel Lavalleja, Rocha </motion.p>
+
+       <div> <p><b>Horario de Atención</b></p>
+
+<motion.p
+  initial={{ opacity: 0,
+       x:300
+     }}
+     whileInView={{ opacity: 1,
+       translateX : -300
+     }
+   }
+   
+    transition={{
+     duration:  0.5,
+     type:'spring'
+     
+     
+    }}
+    viewport={{ once: true }}>Lunes a Viernes de 09 a 18 hs</motion.p></div>
+
+       <div> <p><b>Correo electrónico</b></p>
+
+<motion.a
+  initial={{ opacity: 0,
+       x:300
+     }}
+     whileInView={{ opacity: 1,
+       translateX : -300
+     }
+   }
+   
+    transition={{
+     duration:  0.5,
+     type:'spring'
+     
+     
+    }}
+    viewport={{ once: true }} href="mailto:agenciamktboost.uy@gmail.com" className="text-pinkPrincipal">agenciamktboost.uy@gmail.com</motion.a></div>
+       </div>
+</div>
+
+       
       </div>
-      </div>
+      <FormContact />
     </section>
   );
 }

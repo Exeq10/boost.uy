@@ -1,15 +1,29 @@
+import { animate, animations, delay, motion } from "framer-motion";
+
 function Team() {
   return (
     <section className="w-4/5 m-auto text-center mt-40 ">
-      <h3 className="text-4xl font-serif">
-        Nuestro <span className="text-pinkPrincipal">Equipo</span>
+      <h3 className="text-4xl  font-serif border-b-2 inline-flex gap-1 border-pinkPrincipal pb-2">
+        Nuestro <span className="text-pinkPrincipal"> Equipo</span>
       </h3>
 
       <div className="flex flex-wrap  gap-14 justify-between items-center mt-16 w-full ">
         {/* /* /* /* /* /* /* /* /* /*  {/* Sthefani ============================================================================================ */}
-        <div className="md:flex  md:w-2/5 gap-5 ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.8,
+          }}
+          viewport={{ once: true }}
+          className="md:flex  md:w-2/5 gap-5 "
+        >
           <picture className="md:w-4/5 ">
-            <img className="rounded-sm" src="./img/sthefani.png" alt="member" />
+            <img
+              className="rounded-sm"
+              src="./img/sthefani.webp"
+              alt="member"
+            />
           </picture>
 
           <div className="flex flex-col gap-5">
@@ -24,12 +38,21 @@ function Team() {
               todos.{" "}
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* fin Exequiel========================================================================================0000000 */}
 
         {/* Cande  */}
-        <div className="md:flex   md:w-2/5 gap-5 ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+          }}
+          viewport={{ once: true }}
+          className="md:flex   md:w-2/5 gap-5 "
+        >
           <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/cande.svg" alt="member" />
           </picture>
@@ -47,12 +70,21 @@ function Team() {
               con la audiencia y brindarles una experiencia única.{" "}
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* fin Cande========================================================================================0000000 */}
 
         {/* Luciana  */}
-        <div className="md:flex   md:w-2/5 gap-5 ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.7,
+          }}
+          viewport={{ once: true }}
+          className="md:flex   md:w-2/5 gap-5 "
+        >
           <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/lu.svg" alt="member" />
           </picture>
@@ -68,12 +100,21 @@ function Team() {
               los objetivos del cliente para potenciar su marca.{" "}
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* fin Luciana ========================================================================================0000000 */}
 
         {/* Exequiel  */}
-        <div className="md:flex  md:w-2/5  gap-5 ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.9,
+          }}
+          viewport={{ once: true }}
+          className="md:flex  md:w-2/5  gap-5 "
+        >
           <picture className="md:w-4/5 ">
             <img className="rounded-sm" src="./img/exe.svg" alt="member" />
           </picture>
@@ -89,7 +130,7 @@ function Team() {
               eficiente para cumplir con nuestros clientes.{" "}
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* fin Exequiel========================================================================================0000000 */}
       </div>

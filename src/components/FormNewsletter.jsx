@@ -9,7 +9,7 @@ function FormNewsletter() {
     
 
   return (
-    <div className='w-full flex flex-col mt-32 justify-center items-center letter  py-16 ' >
+    <div className='w-full flex flex-col mt-32 justify-center items-center letter  py-16  text-center' >
 
 <h3 className="text-4xl font-serif mb-16" >News<span  className="text-pinkPrincipal">letter</span></h3>
     

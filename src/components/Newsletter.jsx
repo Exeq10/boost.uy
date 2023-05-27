@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 
+
 function Newsletter() {
 
     
@@ -13,7 +14,10 @@ function Newsletter() {
      }
       
   return (
-    <form  onSubmit={handleSubmit}  className='flex gap-3'>
+    <form
+    
+   
+    onSubmit={handleSubmit}  className='flex gap-3'>
     <input
     id="newsletter"
     type="email" 

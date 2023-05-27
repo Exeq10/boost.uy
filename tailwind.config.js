@@ -6,7 +6,7 @@ export default {
       screens: {
 
        
-          'phone': '278px',
+          'phone': '378px',
          
     
   },
@@ -27,6 +27,7 @@ export default {
       colors: {
         pinkPrincipal: " #FF589E",
         pinkOpacity: " #FF589ECC",
+        greenwpp: "#35C42C"
        
         
       },

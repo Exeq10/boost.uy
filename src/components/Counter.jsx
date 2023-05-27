@@ -54,28 +54,31 @@ function Counter() {
 
 
   return (
-    <section className="md:w-3/4 flex m-auto justify-between px-5 font-serif font-bold mt-9">
+    <section className="md:w-3/4 hidden  md:flex flex-col sm:flex-row md:flex-row
+    lg:flex-row m-auto justify-between px-5 font-serif font-bold ">
       <div className="flex flex-col gap-3 items-center">
      
-        <p className="md:text-4xl text-2xl">{clientes} +</p>
+        <p className="text-4xl ">{clientes} +</p>
 
-        <p className="text-xs text-center md:text-xl">Clientes Satisfechos</p>
+        <p className=" text-center text-lg mb-3">Clientes Satisfechos</p>
       </div>
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col gap-2 items-center">
     
-        <p className="md:text-4xl text-2xl">{campañas} +</p>
-        <p className="text-xs text-center md:text-xl">Campañas realizadas </p>
+        <p className="text-4xl">{campañas} +</p>
+        <p className=" text-center text-lg mb-3">Campañas realizadas </p>
       </div>
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col gap-2 items-center">
 
-        <p className="md:text-4xl text-2xl">{cuentas} +</p>
-        <p className="text-xs text-center md:text-xl">Cuentas alcanzadas</p>{" "}
+        <p className="text-4xl">{cuentas} +</p>
+        <p className=" text-center text-lg mb-3">Cuentas alcanzadas</p>{" "}
       </div>
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col gap-2 items-center">
  
-        <p className="md:text-4xl text-2xl">{publicidad} +</p>
-        <p className="text-xs text-center md:text-xl">Invertidos en publicidad</p>{" "}
+        <p className="text-4xl ">{publicidad} +</p>
+        <p className=" text-center text-lg mb-3">Invertidos en publicidad</p>{" "}
       </div>
+
+   
     </section>
   );
 }

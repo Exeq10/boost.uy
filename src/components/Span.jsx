@@ -9,7 +9,7 @@ function Span() {
     {
         autoStart:true,
         loop:true,
-        delay: 100,
+        
     }
   }
     onInit={(typewriter)=> {
@@ -20,7 +20,7 @@ function Span() {
      
     .typeString("Empresas")
    
-    .pauseFor(2500)
+    .pauseFor(1000)
     .deleteAll()
     .typeString("Redes")
     .pauseFor(1000)
