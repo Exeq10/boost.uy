@@ -27,25 +27,7 @@ function Contacto() {
 
         <h5 className="text-1xl text-pinkPrincipal font-bold text-lg border-b-2 mb-2 font-serif">Uruguay</h5>
 
-        <motion.p
-        
-        initial={{ opacity: 0,
-              x:300
-            }}
-            whileInView={{ opacity: 1,
-              translateX : -300
-            }
-          }
-          
-           transition={{
-            duration:  0.5,
-            type:'spring'
-            
-            
-           }}
-           viewport={{ once: true }}
-        
-        >José Pedro Rámirez esq Juan Manuel Lavalleja, Rocha </motion.p>
+       
 
        <div> <p><b>Horario de Atención</b></p>
 

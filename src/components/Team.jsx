@@ -3,9 +3,10 @@ import { animate, animations, delay, motion } from "framer-motion";
 function Team() {
   return (
     <section className="w-4/5 m-auto text-center mt-40 ">
-      <h3 className="text-4xl  font-serif border-b-2 inline-flex gap-1 border-pinkPrincipal pb-2">
+      <h3 className="text-4xl  font-serif inline-flex gap-1 pb-2">
         Nuestro <span className="text-pinkPrincipal"> Equipo</span>
       </h3>
+      <div className='bg-pinkPrincipal m-auto h-1 w-28 mt-2'></div>
 
       <div className="flex flex-wrap  gap-14 justify-between items-center mt-16 w-full ">
         {/* /* /* /* /* /* /* /* /* /*  {/* Sthefani ============================================================================================ */}
@@ -20,6 +21,7 @@ function Team() {
         >
           <picture className="md:w-4/5 ">
             <img
+            loading="lazy"
               className="rounded-sm"
               src="./img/sthefani.webp"
               alt="member"
@@ -54,7 +56,7 @@ function Team() {
           className="md:flex   md:w-2/5 gap-5 "
         >
           <picture className="md:w-4/5 ">
-            <img className="rounded-sm" src="./img/cande.svg" alt="member" />
+            <img className="rounded-sm" loading="lazy" src="./img/cande.svg" alt="member" />
           </picture>
 
           <div className="flex flex-col gap-5">
@@ -86,7 +88,7 @@ function Team() {
           className="md:flex   md:w-2/5 gap-5 "
         >
           <picture className="md:w-4/5 ">
-            <img className="rounded-sm" src="./img/lu.svg" alt="member" />
+            <img className="rounded-sm" loading="lazy" src="./img/lu.svg" alt="member" />
           </picture>
 
           <div className="flex flex-col gap-5">
@@ -116,7 +118,7 @@ function Team() {
           className="md:flex  md:w-2/5  gap-5 "
         >
           <picture className="md:w-4/5 ">
-            <img className="rounded-sm" src="./img/exe.svg" alt="member" />
+            <img className="rounded-sm" loading="lazy" src="./img/exe.svg" alt="member" />
           </picture>
 
           <div className="flex flex-col gap-5">

@@ -3,7 +3,7 @@ import { animate, animations, delay, motion } from "framer-motion"
 
 function ChatWpp() {
   return (
-    <div className='w-full flex justify-end pr-5 absolute'>
+    <div className='w-full flex justify-end pr-5 absolute '>
 
       <motion.div
       
@@ -23,7 +23,7 @@ function ChatWpp() {
      }}
      viewport={{ once: true }}
       
-      className='fixed bottom-10 right-11 flex gap-3 justify-center items-center animate-pulse'>
+      className='fixed bottom-10 z-10 right-11 flex gap-3 justify-center items-center animate-pulse'>
         <p className='bg-greenwpp px-2 text-white rounded-lg opacity-0 md:opacity-100   '>Contáctanos, estamos en linea!</p>
       <a href="https://wa.link/n8zbo6" target='_blank'>  <img className='w-16 rounded-full   ' src="/wpplogo.svg" alt="logowpp" /></a>
       </motion.div>

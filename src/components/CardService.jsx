@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { animate, animations, motion } from "framer-motion"
 
-function CardService({nombre,long,short,picture,id}) {
+function CardService({nombre,short,picture,id}) {
 
  
 
@@ -19,13 +19,14 @@ function CardService({nombre,long,short,picture,id}) {
 }
 
  transition={{
-  duration: id 
+  duration: 0.3
   
  }}
     
     className="group   shadow-lg  sm:w-96 md:max-w-custom max-h-140  flex flex-col border  px-4   items-start  mt-4 ">
             <i className={ `fa-solid ${picture}  text-5xl text-pinkPrincipal mt-4 mb-4 ml-4`} ></i>
                
+            <a id="servicios" className="mb-4"></a>
      
                <h3 className="font-bold text-xl mb-3 font-serif">{nombre} </h3>
      

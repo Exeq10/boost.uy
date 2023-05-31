@@ -138,11 +138,11 @@ function Info() {
       {/*  segundo container================================================================ */}
 
       <div
-        className="w-full md:px-24   md:py-14  flex  gap-5 justify-center items-center flex-wrap card 
-       "
+        className="w-full md:px-24   md:py-14  flex gap-2 justify-center items-center flex-wrap card 
+        "
       >
-        <a id="servicios"></a>
         {
+        
        
         Servicios.map((servicio, key) => (
         

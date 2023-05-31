@@ -54,7 +54,7 @@ function Counter() {
 
 
   return (
-    <section className="md:w-3/4 hidden  md:flex flex-col sm:flex-row md:flex-row
+    <section className="md:w-3/4 hidden mt-10  md:flex flex-col sm:flex-row md:flex-row
     lg:flex-row m-auto justify-between px-5 font-serif font-bold ">
       <div className="flex flex-col gap-3 items-center">
      

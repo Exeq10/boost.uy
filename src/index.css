@@ -8,8 +8,11 @@
 
 html{
 scroll-behavior:
-    smooth
+    smooth;
+
+    overflow-x: hidden;
 }
+
 
 
 
@@ -67,19 +70,6 @@ scroll-behavior:
 
 
 
-.job1{
-
-    background-image:Url('/img/1.svg')
-    
-}
-.job2{
-
-    background-image:Url('/img/3.svg')
-}
-.job3{
-
-    background-image:Url('/img/5.svg')
-}
 
 
 

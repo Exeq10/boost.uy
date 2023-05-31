@@ -11,6 +11,7 @@ import Portfolio from "./components/Portfolio";
 import FormNewsletter from "./components/FormNewsletter";
 import ChatWpp from "./components/ChatWpp";
 import Service from "./components/Service";
+import Footer from "./components/Footer";
 
 
 
@@ -40,7 +41,7 @@ function App() {
                 <div className="point">
                   {position <= 754 ? (
                     <>
-                      <ChatWpp /> <Counter />
+                       <ChatWpp />  <Counter />
                     </>
                   ) : (
                     ""
@@ -54,7 +55,10 @@ function App() {
                 <FormNewsletter />
 
                 <Contacto />
+                <Footer/>
               </div>
+
+          
             }
           />
 

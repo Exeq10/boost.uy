@@ -6,7 +6,7 @@ const Servicios = [
     nombre: " Asesorias",
     picture_url: "fa-solid fa-bullhorn ",
     short_description:
-      "Ofrecemos reuniones de una hora aproximadamente, ya sea presencial o por Zoom, enfocada en abordar tus puntos de dolor. Realizaremos una auditoría de tu cuenta y la optimizaremos para mejorar su rendimiento.",
+      "Ofrecemos reuniones de una hora aproximadamente, ya sea presencial o por Zoom, enfocada en abordar tus puntos de dolor. Realizaremos una auditoría de tu cuenta y brindaremos opciones de mejora.",
     propuesta: [
       "Estrategias de Marketing adaptadas a tus necesidades",
       "Herramientas para optimizar tu tiempo y maximizar la eficiencia en tu trabajo",
@@ -28,15 +28,30 @@ const Servicios = [
     short_description:
       "Nos especializamos en ofrecer soluciones de desarrollo web a medida para satisfacer las necesidades únicas de nuestros clientes. Nuestro equipo de expertos en desarrollo web está altamente capacitado.",
     propuesta: [
-      "Diseño atractivo y personalizado: Crearemos un diseño a medida que refleje la identidad de tu marca y se ajuste a tus requisitos específicos. ",
-      "Funcionalidad y facilidad de uso: Desarrollaremos un sitio web con una navegación intuitiva y una estructura clara",
-      "Responsividad y compatibilidad: Aseguraremos que tu sitio web sea completamente responsive, lo que significa que se verá y funcionará de manera óptima en dispositivos móviles, tablets y computadoras de escritorio.",
-      "Optimización para motores de búsqueda (SEO): Implementaremos las mejores prácticas de SEO durante el desarrollo de tu sitio web para que tenga una base sólida desde el principio",
-      "Mantenimiento y soporte continuo: Nuestro servicio no se limita solo al desarrollo inicial. Estaremos disponibles para brindarte soporte técnico",
+      {pic:'fa-solid fa-laptop-code ',desc:"Diseño atractivo y personalizado "},
+      {pic:'fa-solid fa-check',desc:"Funcionalidad y facilidad de uso"},
+      {pic:'fa-solid fa-mobile-screen',desc:"Responsividad y compatibilidad"},
+      {pic:'fa-solid fa-gear',desc:"Optimización para motores de búsqueda (SEO) "},
+      {pic:'fa-solid fa-headset ',desc:"Mantenimiento y soporte continuo"},
     ],
 
+  
+  
+    tecnologias: {
+      pic:'/img/bantech.svg',
+      desc:'Trabajamos con tecnologias orientadas al ',
+      span:'Marketing'
+    },
+      
+
+    banner:['/img/banweb3.svg','/img/banweb2.svg','/img/banweb1.svg'],
+
+
+    
+
+
     objetivo:
-      " Te ofrecemos un sitio web atractivo, funcional y optimizado que impulsará tu presencia en línea ¡estamos aquí para ayudarte en cada paso del camino!",
+      " Te ofrecemos un sitio web atractivo, funcional y optimizado que impulsará tu presencia en línea !! ",
   },
 
   /* ==========================================================Redes Sociales============================================================= */
