@@ -28,7 +28,7 @@ function FormContact() {
    <>
 
     {/* 1° div contact ============================================================================ */}
-    <div className="bg-white  flex    md:w-2/4   w-full py-9 px-9">
+    <div className="bg-gray-50  flex    md:w-2/4   w-full py-9 px-9">
      
 
         <form id="formulario " 
@@ -46,7 +46,7 @@ function FormContact() {
               id="text"
               type="text"
               name="name"
-              className="w-full border-b-2 border-pinkPrincipal px-2  py-1 outline-none duration-500 focus:scale-105"
+              className="w-full border-b-2 border-pinkPrincipal px-2 bg-gray-50 py-1 outline-none duration-500 focus:scale-105"
               placeholder = "Ingrese su nombre"
               required
 
@@ -69,7 +69,7 @@ function FormContact() {
         id="email"
         type="email" 
         name="email"
-        className="w-full  border-b-2 border-pinkPrincipal px-2  duration-500 py-1 outline-none focus:scale-105"
+        className="w-full  border-b-2 border-pinkPrincipal px-2 bg-gray-50 duration-500 py-1 outline-none focus:scale-105"
         placeholder = "Ingrese su email"
         required
         
@@ -92,7 +92,7 @@ function FormContact() {
               <textarea
                 id="message"
                 name="message"
-                className="w-full  border-b-2 border-pinkPrincipal py-2 px-3  outline-none  duration-500 focus:scale-105"
+                className="w-full  border-b-2 border-pinkPrincipal py-2 px-3  bg-gray-50 outline-none  duration-500 focus:scale-105"
                 cols="30"
                 rows="10"
                 placeholder = "Deje su mensaje aqui"

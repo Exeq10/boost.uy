@@ -26,7 +26,7 @@ function Service() {
 
   return (
     <>
-      <section className=" w-screen  text-center flex flex-col justify-center items-center">
+      <section className=" w-full  text-center flex flex-col justify-center items-center">
         <h1 className="text-4xl mt-5 font-montserrat font-extrabold">
           {nombre}{" "}
         </h1>

@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import {trabajos} from '../assets/portfolio/data'
 import Proyecto from './Proyecto'
 import { animate, animations, delay, motion } from "framer-motion"
+import Clients from './Clients'
 
 
 
@@ -10,7 +11,7 @@ function Portfolio() {
 
 
 
-const [categoria,setCategoria]= useState('dis')
+const [categoria,setCategoria]= useState('web')
 const [filtro,setFiltro]= useState([])
 
 
@@ -48,7 +49,7 @@ const rendering = () =>{
  transition={{
   duration:  0.5 ,
  
- }}className='flex flex-col mt-36 justify-center items-center'>
+ }}className='flex flex-col mt-36 justify-center items-center w-full'>
 <h3 className="text-4xl font-serif  pb-2" >Trabajos <span  className="text-pinkPrincipal">realizados</span></h3>
 <div className='bg-pinkPrincipal m-auto h-1 w-28 mt-2'></div>
 
@@ -100,6 +101,11 @@ hover:scale-105 hover:bg-pinkPrincipal hover:text-white duration-300  '    onCli
 
     </div>
 
+
+
+
+
+    <Clients/>
    
 
   

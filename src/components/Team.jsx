@@ -2,7 +2,7 @@ import { animate, animations, delay, motion } from "framer-motion";
 
 function Team() {
   return (
-    <section className="w-4/5 m-auto text-center mt-40 ">
+    <section className="w-4/5  m-auto text-center mt-40 ">
       <h3 className="text-4xl  font-serif inline-flex gap-1 pb-2">
         Nuestro <span className="text-pinkPrincipal"> Equipo</span>
       </h3>

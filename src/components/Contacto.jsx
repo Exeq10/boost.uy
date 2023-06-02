@@ -8,12 +8,12 @@ function Contacto() {
   return (
 
   
-    <section className=" bg-pinkPrincipal mt-52 flex flex-wrap  ">
+    <section className=" mt-52 flex flex-wrap  py-2 px-2 shadow-inner bg-gray-50 ">
 
       <a id="contacto"></a>
 
       {/* 2°div  contact ============================================================================ */}
-      <div className=" md:w-2/4 w-full bg-white flex flex-col gap-28 justify-start items-center pr-4 py-6 ">
+      <div className=" md:w-2/4 w-full bg-gray-50 flex flex-col gap-28 justify-start items-center pr-4 py-6 ">
        
        <h5 className="border-b-2 border-pinkPrincipal text-lg font-bold font-serif">Nuestras oficinas </h5>
 

@@ -13,15 +13,17 @@ function CardService({nombre,short,picture,id}) {
   return (
     <motion.div
     initial={{ opacity: 0,
-      x: 500 }}
+      y: -200 }}
   whileInView={{ opacity: 1,
-  translateX:-500 }
+  translateY:200 }
 }
 
  transition={{
   duration: 0.3
   
  }}
+
+ viewport={{once:false}}
     
     className="group   shadow-lg  sm:w-96 md:max-w-custom max-h-140  flex flex-col border  px-4   items-start  mt-4 ">
             <i className={ `fa-solid ${picture}  text-5xl text-pinkPrincipal mt-4 mb-4 ml-4`} ></i>

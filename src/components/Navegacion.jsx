@@ -6,7 +6,7 @@ function Navegacion() {
 
 
   return (
-    <div className= {`w-full flex z-10  md:flex-row  justify-end py-5 items-center   bg-pinkPrincipal  px-3 shadow-xl sm:flex-col`} >
+    <div className= {`w-full  flex z-10  md:flex-row  justify-end py-5 items-center   bg-pinkPrincipal  px-3 shadow-xl sm:flex-col`} >
 
 
      {/*    <picture className='w-24 h-16 flex justify-center items-center '>

@@ -11,9 +11,12 @@ scroll-behavior:
     smooth;
 
     overflow-x: hidden;
+    
 }
 
-
+*{
+margin : 0
+}
 
 
 

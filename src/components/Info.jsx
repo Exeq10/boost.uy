@@ -70,9 +70,9 @@ function Info() {
           <motion.div
          
             initial={{ opacity: 0,
-            x: -200 }}
+            x: 200 }}
         whileInView={{ opacity: 1,
-        translateX:200 }
+        translateX:-200 }
       }
       
        transition={{
@@ -103,9 +103,9 @@ function Info() {
           </motion.div>
           <motion.div 
                 initial={{ opacity: 0,
-                  x: 200 }}
+                  x: -200 }}
               whileInView={{ opacity: 1,
-              translateX:-200 }
+              translateX:200 }
             }
             
              transition={{
