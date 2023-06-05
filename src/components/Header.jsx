@@ -7,7 +7,7 @@ function Header() {
 
 
   return (
-    <section  className="  w-full h-screen background  relative  bg-cover bg-top   md:bg-center lg:bg-center sm:bg-center bg-no-repeat flex flex-col  justify-start items-center md:items-start text-center">
+    <section  className="  w-full h-screen background   relative  bg-cover bg-fixed bg-top   md:bg-center lg:bg-center sm:bg-center bg-no-repeat flex flex-col  justify-start items-center md:items-start text-center">
 
 
      <div className='pl-3 items-start justify-center  mt-40 flex flex-col gap-3 text-left font-roboto'>

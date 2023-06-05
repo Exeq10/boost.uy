@@ -3,6 +3,7 @@ import {trabajos} from '../assets/portfolio/data'
 import Proyecto from './Proyecto'
 import { animate, animations, delay, motion } from "framer-motion"
 import Clients from './Clients'
+import { Carousel } from "@material-tailwind/react";
 
 
 
@@ -75,7 +76,7 @@ hover:scale-105 hover:bg-pinkPrincipal hover:text-white duration-300  '    onCli
 
 
 
-    <div className='grid md:grid-flow-col w-8/12 md:w-8/12 mt-5   items-center justify-center gap-3 m-auto'>
+    <div className='md:grid lg:grid xl:grid hidden grid-cols-3 grid-rows-4   align-middle w-8/12 md:w-8/12 mt-5   items-center justify-center gap-3 m-auto'>
 
 
       
@@ -94,12 +95,24 @@ hover:scale-105 hover:bg-pinkPrincipal hover:text-white duration-300  '    onCli
       
       
     }
-   
-     
+
 
 
 
     </div>
+<Carousel
+            transition={{ duration: 1 }}
+            autoplay={true}
+            className="rounded-xl w-5/5   md:w-4/5 lg:w-4/5 xl:w-4/5"
+          >
+            {
+
+              rendering()
+
+            }
+          </Carousel>
+   
+     
 
 
 

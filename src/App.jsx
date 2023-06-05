@@ -31,14 +31,14 @@ function App() {
           <Route
             path="/"
             element={
-              <div>
+              <div className="overflow-x-hidden">
                 <Navegacion />
 
                 <Header />
 
                 <Info />
 
-                <div className="point">
+                <div className="point overflow-x-hidden">
                   {position <= 754 ? (
                     <>
                        <ChatWpp />  <Counter />

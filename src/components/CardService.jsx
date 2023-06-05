@@ -25,7 +25,7 @@ function CardService({nombre,short,picture,id}) {
 
  viewport={{once:false}}
     
-    className="group   shadow-lg  sm:w-96 md:max-w-custom max-h-140  flex flex-col border  px-4   items-start  mt-4 ">
+    className="group   shadow-lg  sm:w-96 md:max-w-custom max-h-140  flex flex-col border  px-4   items-start  rounded-lg mt-4 ">
             <i className={ `fa-solid ${picture}  text-5xl text-pinkPrincipal mt-4 mb-4 ml-4`} ></i>
                
             <a id="servicios" className="mb-4"></a>

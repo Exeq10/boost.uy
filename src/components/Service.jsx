@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Servicios from "../assets/Services/Servicios";
 import { Carousel } from "@material-tailwind/react";
 import ChatWpp from "./ChatWpp";
@@ -27,6 +27,11 @@ function Service() {
   return (
     <>
       <section className=" w-full  text-center flex flex-col justify-center items-center">
+        <div className="w-full text-2xl flex justify-start pl-10 pt-3">
+          <Link to={'/'}>
+          <i class="fa-sharp fa-solid fa-arrow-left bg-pinkPrincipal py-1 px-1 rounded-full text-white " ></i>
+          </Link>
+        </div>
         <h1 className="text-4xl mt-5 font-montserrat font-extrabold">
           {nombre}{" "}
         </h1>
@@ -43,7 +48,7 @@ function Service() {
           <div className="flex  items-start justify-start flex-col ">
             {propuesta.map((p, key) => (
               <div className="  py-2 px-2 mt-2 rounded-md text-left flex gap-2 justify-center items-center  text-sm md:text-lg ">
-                <i className={`${p.pic} text-4xl text-pinkPrincipal `}></i>
+                <i className={`${p.pic}  text-xl md:text-4xl lg:text-4xl xl:text-4xl text-pinkPrincipal `}></i>
                 <li className="list-none" key={key}>
                   {" "}
                   {p.desc}{" "}
@@ -55,7 +60,7 @@ function Service() {
           <Carousel
             transition={{ duration: 1 }}
             autoplay={true}
-            className="rounded-xl w-4/5"
+            className="rounded-xl w-5/5   md:w-4/5 lg:w-4/5 xl:w-4/5"
           >
             {banner
               ? banner.map((ban, key) => (
@@ -68,12 +73,12 @@ function Service() {
               : ""}
           </Carousel>
         </div>
-        <h3 className="mt-5 text-sm text-center sm:text-sm md:text-xl lg:text-xl xl:text-xl">
+        <h3 className="mt-16 text-sm text-center sm:text-sm md:text-xl lg:text-xl xl:text-xl">
           {objetivo}{" "}
         </h3>
 
         <button
-          className="flex justify-center py-2 px-5 uppercase rounded-md border shadow-lg hover:scale-105 duration-200 transition-all text-white bg-pinkPrincipal  mb-8 w-2/5 text-center mt-8"
+          className="flex justify-center py-2 px-5 uppercase rounded-md border shadow-lg hover:scale-105 duration-200 transition-all text-white bg-pinkPrincipal  mb-8  w-2/5 md:w-1/5 text-center mt-8"
           href="https://wa.link/n8zbo6"
           target="_blank"
         >

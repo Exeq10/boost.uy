@@ -57,6 +57,56 @@ export const trabajos = [
 
     cat: "dis",
   },
+  {
+    id: 9,
+    nombre: "",
+    imagen: "./img/gestiones/1.svg",
+
+    cat: "gest",
+  },
+  {
+    id: 10,
+    nombre: "",
+    imagen: "./img/gestiones/2.svg",
+
+    cat: "gest",
+  },
+  {
+    id: 11,
+    nombre: "",
+    imagen: "./img/gestiones/3.svg",
+
+    cat: "gest",
+  },
+  {
+    id: 12,
+    nombre: "",
+    imagen: "./img/gestiones/4.svg",
+
+    cat: "gest",
+  },
+  {
+    id: 13,
+    nombre: "",
+    imagen: "./img/gestiones/5.svg",
+
+    cat: "gest",
+  },
+  {
+    id: 14,
+    nombre: "",
+    imagen: "./img/gestiones/6.svg",
+
+    cat: "gest",
+  },
+  {
+    id: 15,
+    nombre: "",
+    imagen: "./img/gestiones/8.svg",
+
+    cat: "gest",
+  },
+  
 ];
 /* trabajos de la agencia  */
 export const clientes = [

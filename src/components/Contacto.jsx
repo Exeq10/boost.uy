@@ -8,7 +8,7 @@ function Contacto() {
   return (
 
   
-    <section className=" mt-52 flex flex-wrap  py-2 px-2 shadow-inner bg-gray-50 ">
+    <section className=" mt-52 flex flex-wrap  bg-fixed py-2 px-2 shadow-inner bg-gray-50 ">
 
       <a id="contacto"></a>
 

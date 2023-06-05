@@ -25,7 +25,7 @@ function Proyecto({trabajo}) {
       >
 
     <picture  >
-    <img loading="lazy" src={trabajo.imagen}  alt="trabajo realizado" className='duration-500 hover:scale-105 hover:drop-shadow-xl  ' />
+    <img loading="lazy" src={trabajo.imagen}  alt="trabajo realizado" className='duration-500 hover:scale-105 drop-shadow-md hover:drop-shadow-xl   ' />
     </picture>
     </motion.div >
   )
