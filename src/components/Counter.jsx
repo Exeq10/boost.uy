@@ -14,10 +14,10 @@ function Counter() {
     }
   };
   const handleCuentas = () => {
-    if (cuentas <= 7) {
+    if (cuentas < 2) {
       setTimeout(() => {
         setCuentas(cuentas + 1);
-      }, 200);
+      }, 400);
     }
   };
   const handleCampañas = () => {
@@ -28,7 +28,7 @@ function Counter() {
     }
   };
   const handlePublicidad = () => {
-    if (publicidad <= 150) {
+    if (publicidad < 30) {
       setTimeout(() => {
         setPublicidad(publicidad + 1);
       }, 10);
@@ -60,22 +60,22 @@ function Counter() {
      
         <p className="text-4xl ">{clientes} +</p>
 
-        <p className=" text-center text-lg mb-3">Clientes Satisfechos</p>
+        <p className=" text-center  mb-3 text-lg">Clientes Satisfechos</p>
       </div>
       <div className="flex flex-col gap-2 items-center">
     
         <p className="text-4xl">{campañas} +</p>
-        <p className=" text-center text-lg mb-3">Campañas realizadas </p>
+        <p className=" text-center  mb-3 text-lg">Campañas realizadas </p>
       </div>
       <div className="flex flex-col gap-2 items-center">
 
-        <p className="text-4xl">{cuentas} +</p>
-        <p className=" text-center text-lg mb-3">Cuentas alcanzadas</p>{" "}
+        <p className="text-4xl">{cuentas} M +</p>
+        <p className=" text-center  mb-3 text-lg">Cuentas alcanzadas</p>{" "}
       </div>
       <div className="flex flex-col gap-2 items-center">
  
-        <p className="text-4xl ">{publicidad} +</p>
-        <p className=" text-center text-lg mb-3">Invertidos en publicidad</p>{" "}
+        <p className="text-4xl ">{publicidad} M + </p>
+        <p className=" text-center  mb-3 text-lg">Invertidos en publicidad</p>{" "}
       </div>
 
    

@@ -24,8 +24,8 @@ function Proyecto({trabajo}) {
  viewport={{ once: true }}
       >
 
-    <picture  >
-    <img loading="lazy" src={trabajo.imagen}  alt="trabajo realizado" className='duration-500 hover:scale-105 drop-shadow-md hover:drop-shadow-xl   ' />
+    <picture  className="w-72 " >
+    <img loading="lazy" src={trabajo.imagen}  alt="trabajo realizado" className='duration-500 hover:scale-105 drop-shadow-md hover:drop-shadow-xl w-full    ' />
     </picture>
     </motion.div >
   )

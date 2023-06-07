@@ -18,11 +18,19 @@ import Footer from "./components/Footer";
 function App() {
   const [position, setPosition] = useState(755);
 
-  window.addEventListener("scroll", () => {
-    const point = document.querySelector(".point");
+  /* detecta el scroll para mostrar el button de Whats App  */
+  useEffect(() => {
+  
+  
+    window.addEventListener("scroll", () => {
+      const point = document.querySelector(".point");
+  
+      setPosition(point.getBoundingClientRect().top);
+    });
+   
 
-    setPosition(point.getBoundingClientRect().top);
-  });
+  }, [])
+  
 
   return (
     <BrowserRouter>

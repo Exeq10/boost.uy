@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import Servicios from "../assets/Services/Servicios";
 import { Carousel } from "@material-tailwind/react";
-import ChatWpp from "./ChatWpp";
+
 import BannerTech from "./BannerTech";
 import Footer from "./Footer";
 
@@ -26,6 +26,8 @@ function Service() {
 
   return (
     <>
+
+
       <section className=" w-full  text-center flex flex-col justify-center items-center">
         <div className="w-full text-2xl flex justify-start pl-10 pt-3">
           <Link to={'/'}>
@@ -42,16 +44,16 @@ function Service() {
           {short_description}{" "}
         </p>
 
-        {tecnologias ? <BannerTech tecnologias={tecnologias} /> : ""}
+       
 
         <div className="w-3/4 m-auto mt-10 flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row items-center md:items-start lg:items-center xl:items-center justify-center gap-6  ">
           <div className="flex  items-start justify-start flex-col ">
             {propuesta.map((p, key) => (
-              <div className="  py-2 px-2 mt-2 rounded-md text-left flex gap-2 justify-center items-center  text-sm md:text-lg ">
-                <i className={`${p.pic}  text-xl md:text-4xl lg:text-4xl xl:text-4xl text-pinkPrincipal `}></i>
-                <li className="list-none" key={key}>
+              <div className="  py-2 px-2 mt-2 rounded-md text-left flex gap-2 justify-start items-start   text-sm md:text-lg ">
+               
+                <li className="list-item " key={key}>
                   {" "}
-                  {p.desc}{" "}
+                  {p.desc}
                 </li>
               </div>
             ))}
@@ -84,6 +86,7 @@ function Service() {
         >
           Consultas
         </button>
+        {tecnologias ? <BannerTech tecnologias={tecnologias} /> : ""}
       </section>
 
       <Footer />

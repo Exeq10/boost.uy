@@ -17,19 +17,19 @@ function Team() {
             duration: 0.8,
           }}
           viewport={{ once: true }}
-          className="md:flex  md:w-2/5 gap-5 "
+          className="flex flex-col items-center md:w-2/5 gap-2 "
         >
-          <picture className="md:w-4/5 ">
+          <picture className=" w-32 ">
             <img
             loading="lazy"
-              className="rounded-sm"
-              src="./img/sthefani.webp"
+              className="rounded-full"
+              src="./img/sthefani.svg"
               alt="member"
             />
           </picture>
 
-          <div className="flex flex-col gap-5">
-            <h4 className="text-xl">Sthefani Fernadez</h4>
+          <div className="flex flex-col gap-2">
+            <h4 className="text-xl">Sthefani Fernandez</h4>
             <h3 className="text-md text-pinkPrincipal">CEO</h3>
 
             <p className="text-sm">
@@ -42,7 +42,7 @@ function Team() {
           </div>
         </motion.div>
 
-        {/* fin Exequiel========================================================================================0000000 */}
+        {/* fin sthefani========================================================================================0000000 */}
 
         {/* Cande  */}
         <motion.div
@@ -53,13 +53,13 @@ function Team() {
             delay: 0.5,
           }}
           viewport={{ once: true }}
-          className="md:flex   md:w-2/5 gap-5 "
+          className="flex flex-col items-center  md:w-2/5 gap-2 "
         >
-          <picture className="md:w-4/5 ">
-            <img className="rounded-sm" loading="lazy" src="./img/cande.svg" alt="member" />
+          <picture className="w-32 ">
+            <img className="rounded-full" loading="lazy" src="./img/cande.svg" alt="member" />
           </picture>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col  gap-2">
             <h4 className="text-xl">Candela Barrientos</h4>
             <h3 className="text-md text-pinkPrincipal">
               Creadora de contenido
@@ -85,13 +85,13 @@ function Team() {
             delay: 0.7,
           }}
           viewport={{ once: true }}
-          className="md:flex   md:w-2/5 gap-5 "
+          className="flex flex-col  items-center md:w-2/5 gap-2 "
         >
-          <picture className="md:w-4/5 ">
-            <img className="rounded-sm" loading="lazy" src="./img/lu.svg" alt="member" />
+          <picture className="w-32 ">
+            <img className="rounded-full" loading="lazy" src="./img/lu.svg" alt="member" />
           </picture>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-2">
             <h4 className="text-xl"> Luciana Bohmweisch </h4>
             <h3 className="text-md text-pinkPrincipal">Community Manager</h3>
 
@@ -115,20 +115,20 @@ function Team() {
             delay: 0.9,
           }}
           viewport={{ once: true }}
-          className="md:flex  md:w-2/5  gap-5 "
+          className="flex flex-col  items-center  md:w-2/5  gap-2 "
         >
-          <picture className="md:w-4/5 ">
-            <img className="rounded-sm" loading="lazy" src="./img/exe.svg" alt="member" />
+          <picture className="w-32 ">
+            <img className="rounded-full" loading="lazy" src="./img/exe.svg" alt="member" />
           </picture>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-2">
             <h4 className="text-xl">Exequiel Schiavo</h4>
             <h3 className="text-md text-pinkPrincipal">Web Developer</h3>
 
             <p className="text-sm">
               {" "}
-              Nuestro desarrollador , encargado de darle vida los diseños ,
-              trabaja con distintas tecnologias que permiten trabajo agil y
+              Nuestro desarrollador, encargado de darle vida los diseños,
+              trabaja con distintas tecnologías que permiten trabajo ágil y
               eficiente para cumplir con nuestros clientes.{" "}
             </p>
           </div>

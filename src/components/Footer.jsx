@@ -1,5 +1,5 @@
-import React from "react";
-
+import { animate, animations, delay, motion } from "framer-motion";
+import { useState } from "react";
 function Footer() {
   const servicios = [
     "Asesorias",
@@ -18,10 +18,19 @@ function Footer() {
         </h4>
         <ul className="flex flex-col items-center sm:items-start">
           {servicios.map((ser) => (
-            <li className="text-gray-700">
+            <motion.li
+              initial={{ opacity: 0, x: 300 }}
+              whileInView={{ opacity: 1, translateX: -300 }}
+              transition={{
+                duration: 0.5,
+                type: "spring",
+              }}
+              viewport={{ once: true }}
+              className="text-gray-700"
+            >
               {" "}
               <i className="fa-solid fa-check"></i> {ser}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
@@ -32,13 +41,26 @@ function Footer() {
         <h4 className="text-lg md:text-xl lg:text-xl xl:text-xl font-extrabold text-black mb-2  ">
           Contacto
         </h4>
-        <p className=" text-gray-700">
+        <motion.p initial={{ opacity: 0, x: 300 }}
+              whileInView={{ opacity: 1, translateX: -300 }}
+              transition={{
+                duration: 0.5,
+                type: "spring",
+              }}
+              viewport={{ once: true }} className=" text-gray-700">
           <i className="fa-solid fa-phone"></i> (+598) 97 099 661
-        </p>
-        <p className=" text-gray-700">
+        </motion.p>
+        <motion.p
+         initial={{ opacity: 0, x: 300 }}
+         whileInView={{ opacity: 1, translateX: -300 }}
+         transition={{
+           duration: 0.5,
+           type: "spring",
+         }}
+         viewport={{ once: true }} className=" text-gray-700">
           {" "}
           <i className="fa-solid fa-envelope"></i> agenciamktboost.uy@gmail.com{" "}
-        </p>
+        </motion.p>
       </div>
 
       <div className=" md:w-1/4 flex flex-col items-center">
@@ -46,17 +68,37 @@ function Footer() {
           Nuestras Redes{" "}
         </h4>
 
-        <div className="flex  gap-4 items-center justify-center text-xl text-pinkPrincipal">
-          <a className="hover:scale-105 transition-all duration-150" href="">
+        <motion.div
+        
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, translateX: 300 }}
+        transition={{
+          duration: 0.5,
+          type: "spring",
+        }}
+        viewport={{ once: true }}className="flex  gap-4 items-center justify-center text-xl text-pinkPrincipal">
+          <a
+            className="hover:scale-105 transition-all duration-150"
+            href="https://www.facebook.com/search/top/?q=%20boost%C2%A0uy"
+            target="_blank"
+          >
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a   className="hover:scale-105 transition-all duration-150" href="https://www.instagram.com/_boost.uy/" target="_blank">
+          <a
+            className="hover:scale-105 transition-all duration-150"
+            href="https://www.instagram.com/_boost.uy/"
+            target="_blank"
+          >
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a className="hover:scale-105 transition-all duration-150" href="">
+          <a
+            className="hover:scale-105 transition-all duration-150"
+            href="https://www.tiktok.com/search?q=%40boost.uy&t=1686178686696"
+            target="_blank"
+          >
             <i className="fa-brands fa-tiktok"></i>
           </a>
-        </div>
+        </motion.div>
       </div>
 
       <picture>

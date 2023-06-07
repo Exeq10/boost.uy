@@ -12,7 +12,7 @@ const Servicios = [
       {pic:'fa-regular fa-clock',desc:"Herramientas para optimizar tu tiempo y maximizar la eficiencia en tu trabajo"},
       {pic:'fa-regular fa-lightbulb ',desc:"Consejos para fortalecer tu marca"},
       {pic:'fa-solid fa-exclamation ',desc:"Tips de diseño utilizando Canva "},
-      {pic:'fa-solid fa-person-circle-question',desc:"Seguimiento y consultoria por whatsapp"},
+      {pic:'fa-solid fa-person-circle-question',desc:"Seguimiento y consultoría por WhatsApp"},
      
     ],
     
@@ -40,7 +40,7 @@ const Servicios = [
   
     tecnologias: {
       pic:'/img/bantech.svg',
-      desc:'Trabajamos con tecnologias orientadas al ',
+      desc:'Trabajamos con tecnologías orientadas al ',
       span:'Marketing'
     },
       
@@ -73,6 +73,8 @@ const Servicios = [
       
       
     ],
+
+    banner:['/img/banred1.svg'],
 
     objetivo:
       "¡Estamos comprometidos en brindarle resultados efectivos en su estrategia de redes sociales!",

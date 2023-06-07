@@ -5,11 +5,11 @@ import { clientes } from "../assets/portfolio/data"
 
 function Clients() {
   return (
-    <section className="mt-48 w-full">
+    <section className="mt-10 w-full">
 
       <div className="text-center flex flex-col gap-3 items-center">
      <div>
-     <h3 className="text-4xl font-serif  pb-2" >Confian en Nosotros</h3>
+     <h3 className="text-4xl font-serif  pb-2" >Confían en Nosotros</h3>
       <div className='bg-pinkPrincipal m-auto h-1 w-28 mt-2'></div>
      </div>
 

@@ -50,7 +50,7 @@ function Info() {
           </h4>
         
 
-          <p className="text-lg text-gray-500">
+          <p className="text-lg md:text-sm lg:text-lg xl:text-lg text-gray-500">
             Somos una{" "}
             <span className="font-semibold">
               agencia de <span className="font-bold">marketing</span>
@@ -93,12 +93,12 @@ function Info() {
               </span>{" "}
             </h4>
 
-            <p className="text-lg  text-gray-500">
+            <p className="text-lg md:text-sm lg:text-lg xl:text-lg text-gray-500">
               Nos especializamos en dos áreas clave: la gestión de redes
               sociales y el desarrollo web. Nuestro equipo de expertos en redes
               sociales puede ayudarle a construir una presencia sólida en las
               redes sociales, aumentar su base de seguidores y mejorar su
-              compromiso con su audiencia..
+              compromiso con su audiencia.
             </p>
           </motion.div>
           <motion.div 
@@ -119,14 +119,14 @@ function Info() {
               </span>{" "}
             </h4>
 
-            <p className="text-lg  text-gray-500">
+            <p className="text-lg md:text-sm lg:text-lg xl:text-lg  text-gray-500">
               En{" "}
               <span className="text-pinkPrincipal  text-bold ">
                 <span className="text-pinkPrincipal  font-bold ">Boost </span>{" "}
               </span>
               , nos aseguramos de mantenernos actualizados con las últimas
               tendencias y prácticas de{" "}
-              <span className="font-bold">marketing</span> digital para
+              <span className="font-bold ">marketing</span> digital para
               garantizar que nuestros clientes obtengan los mejores resultados
               posibles. Nos enfocamos en brindar una excelente atención al
               cliente y trabajar en colaboración para ayudarles a alcanzar sus
@@ -138,7 +138,7 @@ function Info() {
       {/*  segundo container================================================================ */}
 
       <div
-        className="w-full md:px-24   md:py-14  flex gap-2 justify-center items-center flex-wrap card 
+        className="w-full   md:px-2  md:py-14  flex gap-2 justify-center items-center flex-wrap card 
         "
       >
         {

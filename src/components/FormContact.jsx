@@ -11,13 +11,11 @@ function FormContact() {
     if (state.succeeded) {
    
        
-        return  <div className='md:w-2/3  w-full text-center mt-9 text-white text-2xl flex animate-pulse
+        return  <div className='md:w-2/4  w-full text-center mt-9 text-black text-lg flex animate-pulse
          flex-col  items-center justify-center gap-3'>
-            <i className="fa-regular fa-circle-check text-5xl"></i>
+            <i className="fa-regular fa-circle-check text-3xl text-pinkPrincipal"></i>
             <p >Mensaje Enviado </p>
-            <p> Escanee el QR para comunicarse de forma rápida con Nosotros  </p>
-
-            <img src="/linkQr.png" alt="linkQr" />
+           
 
             
    </div>
@@ -28,7 +26,7 @@ function FormContact() {
    <>
 
     {/* 1° div contact ============================================================================ */}
-    <div className="bg-gray-50  flex    md:w-2/4   w-full py-9 px-9">
+    <div className="bg-gray-50  flex    md:w-2/4   w-full py-9 ">
      
 
         <form id="formulario " 
@@ -94,7 +92,7 @@ function FormContact() {
                 name="message"
                 className="w-full  border-b-2 border-pinkPrincipal py-2 px-3  bg-gray-50 outline-none  duration-500 focus:scale-105"
                 cols="30"
-                rows="10"
+                rows="5"
                 placeholder = "Deje su mensaje aqui"
                 required
                 
