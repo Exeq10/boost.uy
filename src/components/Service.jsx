@@ -1,19 +1,27 @@
 import { Link, useParams } from "react-router-dom";
 import Servicios from "../assets/Services/Servicios";
-import { Carousel } from "@material-tailwind/react";
+
 
 import BannerTech from "./BannerTech";
 import Footer from "./Footer";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper";
 function Service() {
   const { id } = useParams();
 
-  console.log(id);
+
 
   const servicio = Servicios.filter((service) => service.id == id);
 
-  console.log(servicio);
-
+  
   const {
     nombre,
     picture_url,
@@ -31,7 +39,7 @@ function Service() {
       <section className=" w-full  text-center flex flex-col justify-center items-center">
         <div className="w-full text-2xl flex justify-start pl-10 pt-3">
           <Link to={'/'}>
-          <i class="fa-sharp fa-solid fa-arrow-left bg-pinkPrincipal py-1 px-1 rounded-full text-white " ></i>
+          <i className="fa-sharp fa-solid fa-arrow-left bg-pinkPrincipal py-1 px-1 rounded-full text-white " ></i>
           </Link>
         </div>
         <h1 className="text-4xl mt-5 font-montserrat font-extrabold">
@@ -59,21 +67,23 @@ function Service() {
             ))}
           </div>
 
-          <Carousel
-            transition={{ duration: 1 }}
-            autoplay={true}
-            className="rounded-xl w-5/5   md:w-4/5 lg:w-4/5 xl:w-4/5"
-          >
-            {banner
-              ? banner.map((ban, key) => (
-                  <img
-                    src={ban}
-                    alt={key}
-                    className="h-full w-full object-cover"
-                  />
-                ))
-              : ""}
-          </Carousel>
+          <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper  rounded-xl w-full  md:w-4/5 lg:w-4/5 xl:w-4/5"
+      >
+        
+      {banner ? banner.map((ban ,key) => <SwiperSlide  key={key}><img src= {ban} alt="banner"  className="h-full w-full object-cover" /> </SwiperSlide>  ) :''}
+      </Swiper>
         </div>
         <h3 className="mt-16 text-sm text-center sm:text-sm md:text-xl lg:text-xl xl:text-xl">
           {objetivo}{" "}

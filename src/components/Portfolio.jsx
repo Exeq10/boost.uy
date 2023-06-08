@@ -47,7 +47,7 @@ useEffect(() => {
 const rendering = () =>{
 
 
-  return filtro.map((trabajo,key)=> <SwiperSlide><Proyecto trabajo={trabajo} key={key}/></SwiperSlide> )
+  return filtro.map((trabajo,key)=> <SwiperSlide  key={key}><Proyecto trabajo={trabajo}/></SwiperSlide> )
 }
 
 
